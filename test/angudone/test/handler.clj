@@ -2,7 +2,6 @@
   (:use clojure.test
         ring.mock.request
         angudone.handler))
-
 (deftest test-app
   (testing "main route"
     (let [response (app (request :get "/"))]
